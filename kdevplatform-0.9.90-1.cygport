@@ -1,0 +1,5 @@
+inherit kde4
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
+libkdevplatform1_CONTENTS="--exclude=cmake usr/bin/*-1.dll usr/lib/kde4/ usr/share/"
+libkdevplatform_devel_CONTENTS="usr/include/ usr/lib/lib* usr/share/kde4/apps/cmake/"
