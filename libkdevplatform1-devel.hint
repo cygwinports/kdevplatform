@@ -1,0 +1,5 @@
+category: KDE
+requires: libkdevplatform1 libkdecore5-devel libQtCore4-devel libQtDBus4-devel libQtDesigner4-devel libQtGui4-devel libQtTest4-devel
+external-source: kdevplatform
+sdesc: "KDE4 KDevelop libraries (development)"
+ldesc: "KDevelop shared libraries and plugins"

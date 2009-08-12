@@ -1,0 +1,63 @@
+kdevplatform
+------------------------------------------
+KDevelop libraries and plugins
+
+Runtime requirements:
+  cygwin-1.7.0-50
+  cvs
+  git
+  libapr1-1.3.3-4
+  libaprutil1-1.3.4-4
+  libgcc1-4.3.2-2
+  libkdecore5-4.2.4-1
+  libQtCore4-4.5.1-1
+  libQtDBus4-4.5.1-1
+  libQtDesigner4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtTest4-4.5.1-1
+  libstdc++6-4.3.2-2
+  mercurial
+  subversion-1.6.2-4
+
+Build requirements:
+(besides corresponding -devel packages)
+  automoc4-0.9.88-10
+  binutils-20080624-2
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/unstable/kdevelop/3.9.94/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdevplatform-0.9.94-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdevplatform-0.9.94-X.cygport all
+
+This will create:
+  /usr/src/kdevplatform-0.9.94-X-src.tar.bz2
+  /usr/src/kdevplatform-0.9.94-X.tar.bz2
+  /usr/src/libkdevplatform1-0.9.94-X.tar.bz2
+  /usr/src/libkdevplatform1-devel-0.9.94-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.9.94-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
