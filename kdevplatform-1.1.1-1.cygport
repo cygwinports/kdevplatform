@@ -1,0 +1,9 @@
+inherit kde4
+
+HOMEPAGE="http://kdevelop.org/"
+
+PATCH_URI="1.1.1-setenv.patch"
+
+PKG_NAMES="lib${PN}2 lib${PN}-devel"
+libkdevplatform2_CONTENTS="--exclude=cmake etc/ usr/bin/*-2.dll usr/lib/kde4/ usr/share/"
+libkdevplatform_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/lib*"
