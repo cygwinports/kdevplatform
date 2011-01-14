@@ -1,5 +1,5 @@
 category: KDE
-requires: libapr1 libaprutil1 libgcc1 libkdecore5 libqjson0 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtWebKit4 libQtXml4 libstdc++6 subversion
+requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libQtWebKit4 libQtXml4 libstdc++6
 external-source: kdevplatform
-sdesc: "KDE4 KDevelop libraries and plugins (runtime)"
+sdesc: "KDE4 KDevelop libraries (runtime)"
 ldesc: "KDevelop shared libraries and plugins"
