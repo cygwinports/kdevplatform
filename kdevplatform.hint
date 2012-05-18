@@ -1,3 +1,4 @@
 category: KDE
-sdesc: "KDevelop libraries and plugins (sources)"
+requires: libapr1 libaprutil1 libgcc1 libkdecore5 libkdevplatform5 libqjson0 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtWebKit4 libQtXml4 libstdc++6 subversion
+sdesc: "KDE4 KDevelop platform plugins"
 ldesc: "KDevelop shared libraries and plugins"
