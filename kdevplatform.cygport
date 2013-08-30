@@ -1,0 +1,22 @@
+inherit kde4
+
+NAME="kdevplatform"
+VERSION=1.5.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDevelop libraries"
+DESCRIPTION="KDevelop shared libraries and plugins"
+HOMEPAGE="http://kdevelop.org/"
+SRC_URI="mirror://kde/stable/kdevelop/4.${VERSION#*.}/src/${NAME}-${VERSION}.tar.bz2"
+PATCH_URI="
+	1.5.1-setenv.patch
+	1.5.1-qml-module.patch
+"
+
+PKG_NAMES="${NAME} lib${NAME}7 lib${NAME}-devel"
+kdevplatform_CATEGORY="KDE"
+kdevplatform_SUMMARY="KDevelop library plugins"
+kdevplatform_CONTENTS="--exclude=cmake etc/ usr/bin/kdev* usr/lib/grantlee/ usr/lib/kde4/ usr/share/"
+libkdevplatform7_CONTENTS="usr/bin/*-7.dll"
+libkdevplatform_devel_REQUIRES="libkdecore-devel"
+libkdevplatform_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/lib*"
