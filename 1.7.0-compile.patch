@@ -1,0 +1,13 @@
+Upstream commit ac3da67
+
+--- origsrc/kdevplatform-1.7.0/plugins/standardoutputview/outputwidget.cpp	2014-08-26 14:49:48.000000000 -0500
++++ src/kdevplatform-1.7.0/plugins/standardoutputview/outputwidget.cpp	2014-11-21 14:22:50.218968100 -0600
+@@ -422,7 +422,7 @@ void OutputWidget::selectItem(Direction
+         ? iface->previousHighlightIndex( index )
+         : iface->nextHighlightIndex( index );
+ 
+-    kDebug() << "selecting item" << select << index << newIndex;
++    kDebug() << "old:" << index << "- new:" << newIndex;
+     activateIndex(newIndex, view, iface);
+ }
+ 

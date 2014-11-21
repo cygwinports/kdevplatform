@@ -1,0 +1,11 @@
+--- origsrc/kdevplatform-1.7.0/plugins/dashboard/declarative/CMakeLists.txt	2014-08-26 14:49:48.000000000 -0500
++++ src/kdevplatform-1.7.0/plugins/dashboard/declarative/CMakeLists.txt	2014-11-21 14:46:40.285063400 -0600
+@@ -2,7 +2,7 @@ project(kdevelop-declarative)
+ 
+ include_directories( ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} )
+ 
+-kde4_add_library(kdevelopdashboarddeclarativeplugin SHARED kdevelopdashboarddeclarativeplugin.cpp icoreobject.cpp)
++kde4_add_library(kdevelopdashboarddeclarativeplugin MODULE kdevelopdashboarddeclarativeplugin.cpp icoreobject.cpp)
+ 
+ target_link_libraries(kdevelopdashboarddeclarativeplugin
+     ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTDECLARATIVE_LIBRARY}
