@@ -1,7 +1,7 @@
 inherit kde4
 
 NAME="kdevplatform"
-VERSION=1.7.0
+VERSION=1.7.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDevelop libraries"
@@ -9,7 +9,6 @@ DESCRIPTION="KDevelop shared libraries and plugins"
 HOMEPAGE="http://kdevelop.org/"
 SRC_URI="mirror://kde/stable/kdevelop/4.${VERSION#*.}/src/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
-	1.7.0-compile.patch
 	1.7.0-qml-module.patch
 "
 
