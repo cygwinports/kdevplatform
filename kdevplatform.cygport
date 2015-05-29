@@ -14,6 +14,7 @@ PATCH_URI="
 
 PKG_NAMES="${NAME} lib${NAME}8 lib${NAME}-devel"
 kdevplatform_CATEGORY="KDE"
+kdevplatform_REQUIRES="kate4-part"
 kdevplatform_SUMMARY="KDevelop library plugins"
 kdevplatform_CONTENTS="--exclude=cmake etc/ usr/bin/kdev* usr/lib/kde4/ usr/share/"
 libkdevplatform8_CONTENTS="usr/bin/*-8.dll"
